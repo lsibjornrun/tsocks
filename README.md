@@ -22,7 +22,7 @@ local = 127.0.0.0/255.255.255.0
 Prepend the command line for each binary that communicate with target like this:
 
 <pre>
-LD_PRELOAD=\<path to tsocks\>/libtsocks.so TSOCKS_CONF_FILE=\<path to conf\>/tsocks.conf \<app connecting to target\>
+LD_PRELOAD=&lt;path to tsocks&gt;/libtsocks.so TSOCKS_CONF_FILE=&lt;path to conf&gt;/tsocks.conf &lt;app connecting to target&gt;
 </pre>
 
 Note that the app that connect to target can use target IP address and port directly, because it will be automatically tunneled through the SOCKS server setup by TunnelSetup.
